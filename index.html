@@ -7,27 +7,29 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="home-wrapper">
-        <h3 class="score-title">HOME</h3>
-        <p id="score-home">0</p>
-        <div>
-          <button id="home-1" onclick="homeScores(1)">+1</button>
-          <button id="home-2" onclick="homeScores(2)">+2</button>
-          <button id="home-3" onclick="homeScores(3)">+3</button>
+    <div class="wrapper">
+      <div class="container">
+        <div class="team-wrapper">
+          <h3 class="team-title">HOME</h3>
+          <p class="score" id="score-home">0</p>
+          <div>
+            <button onclick="homeScores(1)">+1</button>
+            <button onclick="homeScores(2)">+2</button>
+            <button onclick="homeScores(3)">+3</button>
+          </div>
+        </div>
+        <div class="team-wrapper">
+          <h3 class="team-title">GUEST</h3>
+          <p class="score" id="score-guest">0</p>
+          <div>
+            <button onclick="guestScores(1)">+1</button>
+            <button onclick="guestScores(2)">+2</button>
+            <button onclick="guestScores(3)">+3</button>
+          </div>
         </div>
       </div>
-      <div class="guest-wrapper">
-        <h3 class="score-title">GUEST</h3>
-        <p id="score-guest">0</p>
-        <div>
-          <button id="guest-1" onclick="guestScores(1)">+1</button>
-          <button id="guest-2" onclick="guestScores(2)">+2</button>
-          <button id="guest-3" onclick="guestScores(3)">+3</button>
-        </div>
-      </div>
+      <button class="new-game" onclick="resetGame()">New Game</button>
     </div>
-    <button id="new-game" onclick="resetGame()">New Game</button>
     <script src="index.js"></script>
   </body>
 </html>
