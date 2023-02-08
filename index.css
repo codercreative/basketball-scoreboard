@@ -20,7 +20,7 @@ body {
   /* to avoid collapsing margins. See also additional comment under .container */
   /* padding-top: 10px; */
 
-  /* Another way to resolve the collapsing margins between the body and the container. The body has one child and I am using grid to avoid the collapsing marin */
+  /* Another way to resolve the collapsing margins between the body and the container. The body has one child and I am using grid to avoid the collapsing margin */
   display: grid;
   place-content: center;
 }
@@ -35,6 +35,7 @@ body {
 
 .container {
   background-color: #9aabd8;
+  background-color: #1b244a;
   opacity: 0.9;
   display: flex;
   justify-content: space-around;
@@ -54,7 +55,8 @@ body {
 
 .team-title {
   font-family: Verdana, sans-serif;
-  color: #1b244a;
+  /* color: #1b244a; */
+  color: #eeeeee;
   text-align: center;
   font-size: 2rem;
   text-shadow: -1px 1px #080001;
@@ -69,7 +71,7 @@ body {
   background-color: #080001;
   color: #f94f6d;
   padding: 1.5rem;
-  margin-bottom: 10px;
+  margin-bottom: 24px;
   border-radius: 8px;
 }
 
@@ -78,13 +80,17 @@ button {
   border: 2px solid #9aabd8;
   color: #9aabd8;
   padding: 10px;
-  border-radius: 8px;
+  border-radius: 4px;
   background-color: #1b244a;
   cursor: pointer;
 }
 
 .new-game {
-  padding: 15px;
+  font-family: Verdana, sans-serif;
+  padding: 0.8em;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #eeeeee;
 }
 
 @media (max-width: 600px) {
@@ -104,6 +110,10 @@ button {
   .score {
     font-size: 3rem;
     align-self: center;
+  }
+
+  .lead {
+    border: 2px solid green;
   }
 
   button {
